@@ -1,6 +1,6 @@
 DETAILED SUMMARY OF SERVER SETUP AND CONFIGURATION
 Step	Task	Description
-1	Installed Apache	Apache2 was installed to serve web content over HTTP.
+1	Installed Apache	Apache2 was installed to serve web content over HTTP.<br>
 2	Installed PHP	Installed PHP 8.3 and modules to support WordPress.
 3	Installed MySQL Server	MySQL was installed to manage databases.
 4	Created MySQL Database and User	Created a database cbwp_db and user wesadmin with full privileges for WordPress.
