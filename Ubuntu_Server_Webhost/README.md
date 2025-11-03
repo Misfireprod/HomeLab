@@ -1,4 +1,4 @@
-DETAILED SUMMARY OF SERVER SETUP AND CONFIGURATION
+DETAILED SUMMARY OF SERVER SETUP AND CONFIGURATION<br>
 Step	Task	Description<br>
 1	Installed Apache	Apache2 was installed to serve web content over HTTP.<br>
 2	Installed PHP	Installed PHP 8.3 and modules to support WordPress.<br>
@@ -43,12 +43,12 @@ curl http://site1.local	Verifies that the virtual host returns the expected cont
 ping site1.local	Tests if the domain resolves to the server IP.<br>
 sudo nano /etc/hosts	Edits the local DNS mapping for fake domains.<br>
 <br><br>
-ERRORS & FIXES ALONG THE WAY
-Problem	Cause	Solution
-ERROR 1045 (28000): Access denied for user	Wrong or non-existent MySQL user / missing privileges	Re-created user with correct privileges using MySQL shell.
-mysql> prompt showed -> and command hung	Forgot to end SQL command with a semicolon (;)	Added missing ; or exited using Ctrl+C and retyped command.
-Apache pages gave 404 on all non-homepage URLs	.htaccess file not working; mod_rewrite not enabled; AllowOverride not set	Enabled mod_rewrite, updated Apache conf to AllowOverride All, and regenerated permalinks in WordPress admin.
-Apache served only the default site	Virtual hosts were not properly configured or missing ServerName	Ensured <VirtualHost *:80> was used and ServerName matched requested domain.
-Browser said “Hmm. We’re having trouble finding that site.”	The browser’s OS couldn’t resolve site1.local to the server’s IP	Added site1.local to /etc/hosts on the client machine pointing to the server IP.
-Bash error -bash: !: event not found	Used an unescaped exclamation point in echo command	Switched to single quotes or escaped the ! to avoid history expansion error.
-Apache apache2ctl -S showed default binding to 127.0.1.1	Default config had 127.0.1.1 as fallback virtual host	Updated virtual hosts to use <VirtualHost *:80> and optionally set ServerName localhost globally to suppress warning.
+ERRORS & FIXES ALONG THE WAY<br>
+Problem	Cause	Solution<br>
+ERROR 1045 (28000): Access denied for user	Wrong or non-existent MySQL user / missing privileges	Re-created user with correct privileges using MySQL shell.<br>
+mysql> prompt showed -> and command hung	Forgot to end SQL command with a semicolon (;)	Added missing ; or exited using Ctrl+C and retyped command.<br>
+Apache pages gave 404 on all non-homepage URLs	.htaccess file not working; mod_rewrite not enabled; AllowOverride not set	Enabled mod_rewrite, updated Apache conf to AllowOverride All, and regenerated permalinks in WordPress admin.<br>
+Apache served only the default site	Virtual hosts were not properly configured or missing ServerName	Ensured <VirtualHost *:80> was used and ServerName matched requested domain.<br>
+Browser said “Hmm. We’re having trouble finding that site.”	The browser’s OS couldn’t resolve site1.local to the server’s IP	Added site1.local to /etc/hosts on the client machine pointing to the server IP.<br>
+Bash error -bash: !: event not found	Used an unescaped exclamation point in echo command	Switched to single quotes or escaped the ! to avoid history expansion error.<br>
+Apache apache2ctl -S showed default binding to 127.0.1.1	Default config had 127.0.1.1 as fallback virtual host	Updated virtual hosts to use <VirtualHost *:80> and optionally set ServerName localhost globally to suppress warning.<br>
