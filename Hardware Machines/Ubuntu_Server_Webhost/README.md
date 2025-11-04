@@ -1,11 +1,11 @@
-# 🖥️ Home Lab: Web Server & WordPress Deployment (Apache + PHP + MySQL)
+# Home Lab: Web Server & WordPress Deployment (Apache + PHP + MySQL)
 
 **Objective:**  
 Build and host multiple websites on a single Linux-based server using Apache, PHP, and MySQL. Demonstrated real-world configuration, DNS resolution, virtual host setup, and WordPress deployment with database integration and troubleshooting.
 
 ---
 
-## ✅ Overview of Technologies Used
+## Overview of Technologies Used
 
 - **Operating System:** Ubuntu Server
 - **Web Server:** Apache 2.4
@@ -18,7 +18,7 @@ Build and host multiple websites on a single Linux-based server using Apache, PH
 
 ---
 
-## 🛠️ Major Setup Steps
+## Major Setup Steps
 
 ### 1. **Initial Web Stack Installation**
 - Installed Apache web server and confirmed it served a test page on LAN IP.
@@ -50,7 +50,7 @@ Build and host multiple websites on a single Linux-based server using Apache, PH
 
 ---
 
-## 🧪 Key Outcomes
+## Key Outcomes
 
 - Successfully hosted a WordPress site under a named virtual host (`site1.local`) using local domain resolution.
 - Implemented structured database access using dedicated MySQL users.
@@ -62,7 +62,7 @@ Build and host multiple websites on a single Linux-based server using Apache, PH
 
 ---
 
-## 💡 Skills Demonstrated
+## Skills Demonstrated
 
 - Linux system administration (terminal-based)
 - Web server configuration (Apache virtual hosts, modules)
@@ -74,7 +74,7 @@ Build and host multiple websites on a single Linux-based server using Apache, PH
 
 ---
 
-## 📋 Terminal Commands Reference (Select Highlights)
+## Terminal Commands Reference (Select Highlights)
 
 | Command | Description |
 |---------|-------------|
