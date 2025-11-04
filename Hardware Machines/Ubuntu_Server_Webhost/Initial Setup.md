@@ -1,10 +1,3 @@
-# Home Lab: Web Server & WordPress Deployment (Apache + PHP + MySQL)
-
-**Objective:**  
-Build and host multiple websites on a single Linux-based server using Apache, PHP, and MySQL. Demonstrated real-world configuration, DNS resolution, virtual host setup, and WordPress deployment with database integration and troubleshooting.
-
----
-
 ## Overview of Technologies Used
 
 - **Operating System:** Ubuntu Server
@@ -24,7 +17,7 @@ Build and host multiple websites on a single Linux-based server using Apache, PH
 - Installed Apache web server and confirmed it served a test page on LAN IP.
 - Installed PHP 8.3 with MySQL integration (`libapache2-mod-php`, `php-mysql`).
 - Installed and secured MySQL database server.
-- Created a dedicated database (`cbwp_db`) and user (`wesadmin`) for WordPress.
+- Created a dedicated database (`XXXX`) and user (`XXXX`) for WordPress.
 
 ### 2. **WordPress Installation**
 - Downloaded the latest WordPress release via `wget`.
@@ -36,7 +29,7 @@ Build and host multiple websites on a single Linux-based server using Apache, PH
 - Created Apache virtual host config files (`site1.local.conf`, `site2.local.conf`) to support multiple websites.
 - Set up custom document roots at `/var/www/site1.local`, etc.
 - Enabled virtual hosts with `a2ensite` and restarted Apache.
-- Mapped domain names (`site1.local`) to local IP (`192.168.51.116`) using `/etc/hosts`.
+- Mapped domain names (`site1.local`) to local IP (`192.168.XX.XXX`) using `/etc/hosts`.
 
 ### 4. **Migration and Directory Restructuring**
 - Migrated the original WordPress site from `/var/www/html` to `/var/www/site1.local`.
