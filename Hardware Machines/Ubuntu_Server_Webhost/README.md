@@ -1,4 +1,4 @@
-DETAILED SUMMARY OF SERVER SETUP AND CONFIGURATION<br>
+# DETAILED SUMMARY OF SERVER SETUP AND CONFIGURATION<br>
 Step - Task - Description<br>
 1	Installed Apache	Apache2 was installed to serve web content over HTTP.<br>
 2	Installed PHP	Installed PHP 8.3 and modules to support WordPress.<br>
