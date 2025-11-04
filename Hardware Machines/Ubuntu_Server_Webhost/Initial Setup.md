@@ -17,7 +17,7 @@
 - Installed Apache web server and confirmed it served a test page on LAN IP.
 - Installed PHP 8.3 with MySQL integration (`libapache2-mod-php`, `php-mysql`).
 - Installed and secured MySQL database server.
-- Created a dedicated database (`XXXX`) and user (`XXXX`) for WordPress.
+- Created a dedicated database and user for WordPress.
 
 ### 2. **WordPress Installation**
 - Downloaded the latest WordPress release via `wget`.
